@@ -31,7 +31,7 @@ public class SwaggerConfig {
                 "Beers",
                 "0.1",
                 "ek.pl/terms",
-                new Contact("B2B", "www.ek.pl", "kursjava@ek.pl"),
+                new Contact("Ewelina", "www.ek.pl", "ewelinakrawczuk89@gmail.com"),
                 "Licence, privacy policy",
                 "ek.com/license"
         );

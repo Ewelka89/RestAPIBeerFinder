@@ -39,8 +39,8 @@ public class Amount {
     }
 
     private Amount(Builder builder) {
-        value = builder.value;
-        unit = builder.unit;
+        this.value = builder.value;
+        this.unit = builder.unit;
     }
 
 
@@ -51,13 +51,13 @@ public class Amount {
         public Builder() {
         }
 
-        public Builder value(String val) {
-            value = val;
+        public Builder value(String value) {
+            this.value = value;
             return this;
         }
 
-        public Builder unit(String val) {
-            unit = val;
+        public Builder unit(String unit) {
+            this.unit = unit;
             return this;
         }
 

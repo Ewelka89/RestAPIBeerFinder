@@ -51,10 +51,6 @@ public class Beer {
         return "Beer: " +
                 " name='" + name +
                 ", alcohol by volume=" + abv +
-//                ", ibu=" + ibu +'\n'+
-//                ", ebc=" + ebc +'\n' +
-//                ", srm=" + srm +'\n' +
-//                ", ph=" + ph +'\n'+
                 ", attenuationLevel=" + attenuationLevel +
                 ", volume=" + volume +
                 ", boilVolume=" + boilVolume +
@@ -69,17 +65,17 @@ public class Beer {
     }
 
     private Beer(Builder builder) {
-        id = builder.id;
-        name = builder.name;
-        abv = builder.abv;
-        ibu = builder.ibu;
-        ebc = builder.ebc;
-        srm = builder.srm;
-        ph = builder.ph;
-        attenuationLevel = builder.attenuationLevel;
-        volume = builder.volume;
-        boilVolume = builder.boilVolume;
-        ingredients = builder.ingredients;
+        this.id = builder.id;
+        this.name = builder.name;
+        this.abv = builder.abv;
+        this.ibu = builder.ibu;
+        this.ebc = builder.ebc;
+        this.srm = builder.srm;
+        this.ph = builder.ph;
+        this.attenuationLevel = builder.attenuationLevel;
+        this.volume = builder.volume;
+        this.boilVolume = builder.boilVolume;
+        this.ingredients = builder.ingredients;
     }
 
 
@@ -141,58 +137,58 @@ public class Beer {
         private Ingredients ingredients;
 
 
-        public Builder id(int val) {
-            id = val;
+        public Builder id(int id) {
+            this.id = id;
             return this;
         }
 
-        public Builder name(String val) {
-            name = val;
+        public Builder name(String name) {
+            this.name = name;
             return this;
         }
 
-        public Builder abv(Double val) {
-            abv = val;
+        public Builder abv(Double abv) {
+            this.abv = abv;
             return this;
         }
 
-        public Builder ibu(int val) {
-            ibu = val;
+        public Builder ibu(int ibu) {
+            this.ibu = ibu;
             return this;
         }
 
-        public Builder ebc(int val) {
-            ebc = val;
+        public Builder ebc(int ebc) {
+            this.ebc = ebc;
             return this;
         }
 
-        public Builder srm(int val) {
-            srm = val;
+        public Builder srm(int srm) {
+            this.srm = srm;
             return this;
         }
 
-        public Builder ph(double val) {
-            ph = val;
+        public Builder ph(double ph) {
+            this.ph = ph;
             return this;
         }
 
-        public Builder attenuationLevel(int val) {
-            attenuationLevel = val;
+        public Builder attenuationLevel(int attenuationLevel) {
+            this.attenuationLevel = attenuationLevel;
             return this;
         }
 
-        public Builder volume(Volume val) {
-            volume = val;
+        public Builder volume(Volume volume) {
+            this.volume = volume;
             return this;
         }
 
-        public Builder boilVolume(BoilVolume val) {
-            boilVolume = val;
+        public Builder boilVolume(BoilVolume boilVolume) {
+            this.boilVolume = boilVolume;
             return this;
         }
 
-        public Builder ingredients(Ingredients val) {
-            ingredients = val;
+        public Builder ingredients(Ingredients ingredients) {
+            this.ingredients = ingredients;
             return this;
         }
 

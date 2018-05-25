@@ -15,8 +15,8 @@ public class Ingredients {
     }
 
     private Ingredients(Builder builder) {
-        malt = builder.malt;
-        hops = builder.hops;
+        this.malt = builder.malt;
+        this.hops = builder.hops;
     }
 
     @Override
@@ -53,13 +53,13 @@ public class Ingredients {
         public Builder() {
         }
 
-        public Builder malt(List<Malt> val) {
-            malt = val;
+        public Builder malt(List<Malt> malt) {
+            this.malt = malt;
             return this;
         }
 
-        public Builder hops(List<Hops> val) {
-            hops = val;
+        public Builder hops(List<Hops> hops) {
+            this.hops = hops;
             return this;
         }
 

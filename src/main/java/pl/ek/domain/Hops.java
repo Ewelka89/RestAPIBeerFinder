@@ -7,8 +7,8 @@ public class Hops {
     private Amount amount;
 
     private Hops(Builder builder) {
-        name = builder.name;
-        amount = builder.amount;
+        this.name = builder.name;
+        this.amount = builder.amount;
     }
 
     @Override
@@ -50,13 +50,13 @@ public class Hops {
         public Builder() {
         }
 
-        public Builder name(String val) {
-            name = val;
+        public Builder name(String name) {
+            this.name = name;
             return this;
         }
 
-        public Builder amount(Amount val) {
-            amount = val;
+        public Builder amount(Amount amount) {
+            this.amount = amount;
             return this;
         }
 

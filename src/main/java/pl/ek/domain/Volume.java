@@ -27,8 +27,8 @@ public class Volume {
     }
 
     private Volume(Builder builder) {
-        value = builder.value;
-        unit = builder.unit;
+        this.value = builder.value;
+        this.unit = builder.unit;
     }
 
     public int getValue() {
@@ -50,13 +50,13 @@ public class Volume {
         public Builder() {
         }
 
-        public Builder value(int val) {
-            value = val;
+        public Builder value(int value) {
+            this.value = value;
             return this;
         }
 
-        public Builder unit(String val) {
-            unit = val;
+        public Builder unit(String unit) {
+            this.unit = unit;
             return this;
         }
 
